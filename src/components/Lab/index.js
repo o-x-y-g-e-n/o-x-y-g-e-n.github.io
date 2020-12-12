@@ -53,6 +53,7 @@ const Lab = ({ content }) => {
             key={node.id}
             href={node.path}
             title={node.title}
+            type={node.type}
             onClick={() => trackClickLab}
           >
             <BoxHandler>

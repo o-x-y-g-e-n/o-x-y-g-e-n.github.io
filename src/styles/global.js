@@ -45,6 +45,29 @@ const GlobalStyles = createGlobalStyle`
   a {
     text-decoration: none;
   }
+  thead th {
+    font-weight: 400;
+    background: var(--bgSecondary);
+    color: var(--primaryColor);
+  }
+  
+  tr {
+    background: var(--bgPrimary);
+    border-bottom: 1px solid #FFF;
+    margin-bottom: 5px;
+  }
+  
+  tbody:nth-child(odd) {
+    background: var(--bgSecondary);
+  }
+  
+  th, td {
+    color : var(--primaryColor);
+    text-align: left;
+    padding: 20px;
+    font-weight: 300;
+  }
+  
 
   button {
     background: none;

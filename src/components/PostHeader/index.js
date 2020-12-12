@@ -20,16 +20,16 @@ const PostHeader = ({ image, tags, date, timeToRead, title, description }) => {
       )}
       <S.ButtonBack>
         <ButtonLink rel="prev" to="/blog/">
-          ← Voltar na listagem
+          ← Back to List
         </ButtonLink>
       </S.ButtonBack>
       <DateTime>
         <span itemProp="datePublished">{date}</span>
-        {timeToRead && <span> · Leitura de {timeToRead} min</span>}
+        {timeToRead && <span> · {timeToRead} min read</span>}
       </DateTime>
       <S.Title>{title}</S.Title>
       <S.Subtitle>{description}</S.Subtitle>
-      <S.Author>Felipe Fialho</S.Author>
+      <S.Author>Shivam Gohel</S.Author>
       <Tags tags={tags} isLink={true} />
     </S.PostHeader>
   )

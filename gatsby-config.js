@@ -134,6 +134,12 @@ const plugins = [
           resolve: "gatsby-remark-relative-images",
         },
         {
+          resolve: "@pauliescanlon/gatsby-remark-sticky-table"
+        },
+        {
+          resolve: "gatsby-remark-images-zoom",
+        },
+        {
           resolve: `gatsby-remark-images`,
           options: {
             // It's important to specify the maxWidth (in pixels) of

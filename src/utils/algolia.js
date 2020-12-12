@@ -10,7 +10,7 @@ const postQuery = `{
         }
         frontmatter {
           date_timestamp: date
-          date(locale: "pt-br", formatString: "DD MMM[,] YYYY")
+          date(locale: "en-in", formatString: "DD MMM[,] YYYY")
           description
           title
           tags

@@ -17,10 +17,11 @@ const BlogList = props => {
   const nextPage = `/blog/page/${currentPage + 1}`
 
   const list = props.data.allMarkdownRemark.edges
-
+  console.log(list)
   const content = () => {
     return (
       <>
+        
         {list.map(({ node }, i) => (
           <BlogItem
             key={i}
@@ -73,7 +74,7 @@ export const BlogListQuery = graphql`
             slug
           }
           frontmatter {
-            date(locale: "pt-br", formatString: "DD MMM[,] YYYY")
+            date(locale: "en-in", formatString: "DD MMM[,] YYYY")
             description
             title
             tags

@@ -60,7 +60,7 @@ export const query = graphql`
         slug
       }
       frontmatter {
-        date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
+        date(locale: "en-in", formatString: "DD MMMM YYYY")
         description
         title
         tags
