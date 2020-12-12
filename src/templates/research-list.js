@@ -3,18 +3,18 @@ import { graphql } from "gatsby"
 
 import Layout from "components/Layout"
 import SEO from "components/Seo"
-import BlogItem from "components/BlogItem"
+import ResearchItem from "components/ResearchItem"
 import GridTemplate from "components/GridTemplate"
 import Pagination from "components/Pagination"
 import Search from "components/Search"
 
-const BlogList = props => {
+const ResearchList = props => {
   const { currentPage, numPages } = props.pageContext
   const isFirst = currentPage === 1
   const isLast = currentPage === numPages
   const prevPage =
-    currentPage - 1 === 1 ? "/blog/" : `/blog/page/${currentPage - 1}`
-  const nextPage = `/blog/page/${currentPage + 1}`
+    currentPage - 1 === 1 ? "/research/" : `/research/page/${currentPage - 1}`
+  const nextPage = `/research/page/${currentPage + 1}`
 
   const list = props.data.allMarkdownRemark.edges
   console.log(list)
@@ -23,7 +23,7 @@ const BlogList = props => {
       <>
         
         {list.map(({ node }, i) => (
-          <BlogItem
+          <ResearchItem
             key={i}
             slug={node.fields.slug}
             date={node.frontmatter.date}
@@ -53,7 +53,7 @@ const BlogList = props => {
 
   return (
     <Layout>
-      <SEO title="Blog" />
+      <SEO title="Research" />
       <GridTemplate>
         <Search algolia={algolia} callback={content()} props={props} />
       </GridTemplate>
@@ -86,4 +86,4 @@ export const BlogListQuery = graphql`
   }
 `
 
-export default BlogList
+export default ResearchList

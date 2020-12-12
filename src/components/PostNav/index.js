@@ -2,7 +2,7 @@ import React from "react"
 import ReactGA from "react-ga"
 import PropTypes from "prop-types"
 
-import BlogItem from "components/BlogItem"
+import ResearchItem from "components/ResearchItem"
 
 import * as S from "./styled"
 
@@ -20,7 +20,7 @@ const PostNav = ({ next, previous }) => {
       {previous && (
         <S.NavItem>
           <S.Title>Anterior</S.Title>
-          <BlogItem
+          <ResearchItem
             slug={previous.fields.slug}
             date={previous.frontmatter.date}
             title={previous.frontmatter.title}
@@ -36,7 +36,7 @@ const PostNav = ({ next, previous }) => {
       {next && (
         <S.NavItem>
           <S.Title>Próximo</S.Title>
-          <BlogItem
+          <ResearchItem
             slug={next.fields.slug}
             date={next.frontmatter.date}
             title={next.frontmatter.title}

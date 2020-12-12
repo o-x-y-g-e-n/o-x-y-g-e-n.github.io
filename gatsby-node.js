@@ -4,7 +4,7 @@ const { fmImagesToRelative } = require("gatsby-remark-relative-images")
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
-  const blogPost = path.resolve(`./src/templates/blog-post.js`)
+  const researchPost = path.resolve(`./src/templates/research-post.js`)
 
   return graphql(
     `
@@ -50,13 +50,13 @@ exports.createPages = ({ graphql, actions }) => {
   ).then(result => {
     if (result.errors) throw result.errors
 
-    // Create blog posts pages.
+    // Create research posts pages.
     const posts = result.data.allMarkdownRemark.edges
 
     posts.forEach(({ node, next, previous }) => {
       createPage({
         path: node.fields.slug,
-        component: blogPost,
+        component: researchPost,
         context: {
           slug: node.fields.slug,
           // the order is different here because of the DESC order
@@ -66,14 +66,14 @@ exports.createPages = ({ graphql, actions }) => {
       })
     })
 
-    // Create blog post list pages
+    // Create research post list pages
     const postsPerPage = 10
     const numPages = Math.ceil(posts.length / postsPerPage)
 
     Array.from({ length: numPages }).forEach((_, i) => {
       createPage({
-        path: i === 0 ? `/blog/` : `/blog/page/${i + 1}`,
-        component: path.resolve("./src/templates/blog-list.js"),
+        path: i === 0 ? `/research/` : `/research/page/${i + 1}`,
+        component: path.resolve("./src/templates/research-list.js"),
         context: {
           limit: postsPerPage,
           skip: i * postsPerPage,
@@ -91,11 +91,11 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   fmImagesToRelative(node)
 
   if (node.internal.type === `MarkdownRemark`) {
-    const slug = createFilePath({ node, getNode, basePath: `blog` })
+    const slug = createFilePath({ node, getNode, basePath: `research` })
     createNodeField({
       node,
       name: `slug`,
-      value: `blog/${slug.slice(12)}`,
+      value: `research/${slug.slice(12)}`,
     })
   }
 }

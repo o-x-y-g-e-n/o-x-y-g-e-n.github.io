@@ -14,7 +14,7 @@ const FooterData = () => {
         </a>
         <a
           className="link"
-          href="https://github.com/felipefialho/felipefialho.com/blob/master/LICENSE"
+          href="https://github.com/o-x-y-g-e-n/personal-website/blob/master/LICENSE"
           target="_blank"
           rel="noopener noreferrer"
         >

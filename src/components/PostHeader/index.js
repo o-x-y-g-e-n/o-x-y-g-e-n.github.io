@@ -19,7 +19,7 @@ const PostHeader = ({ image, tags, date, timeToRead, title, description }) => {
         </R.GreaterThanTablet>
       )}
       <S.ButtonBack>
-        <ButtonLink rel="prev" to="/blog/">
+        <ButtonLink rel="prev" to="/research/">
           ← Back to List
         </ButtonLink>
       </S.ButtonBack>

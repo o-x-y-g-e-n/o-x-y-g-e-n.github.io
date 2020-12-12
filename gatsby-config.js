@@ -42,7 +42,7 @@ const feeds = [
       }
     `,
     output: "/feed.xml",
-    title: "Felipe Fialho - RSS Feed",
+    title: "Shivam Gohel - RSS Feed",
   },
 ]
 
@@ -68,15 +68,15 @@ const plugins = [
   {
     resolve: `gatsby-source-filesystem`,
     options: {
-      path: `${__dirname}/content/posts`,
-      name: `blog`,
+      path: `${__dirname}/content/research`,
+      name: `research`,
     },
   },
   {
     resolve: `gatsby-source-filesystem`,
     options: {
-      path: `${__dirname}/content/lab`,
-      name: `lab`,
+      path: `${__dirname}/content/code`,
+      name: `code`,
     },
   },
   `gatsby-transformer-json`,
@@ -105,7 +105,7 @@ const plugins = [
       background_color: `#fcfcfc`,
       theme_color: `#111111`,
       display: `minimal-ui`,
-      icon: `content/assets/icon.png`,
+      icon: `content/assets/icon.svg`,
     },
   },
   {

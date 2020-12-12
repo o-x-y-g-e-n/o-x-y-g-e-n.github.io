@@ -5,8 +5,8 @@ import media from "styled-media-query"
 import * as V from "../../styles/variables"
 
 export const Avatar = styled(Img).attrs({
-  alt: "Felipe Fialho",
-  "aria-label": "Felipe Fialho",
+  alt: "Shivam Gohel",
+  "aria-label": "Shivam Gohel",
 })`
   border-radius: 50%;
   display: block;

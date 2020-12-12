@@ -8,25 +8,25 @@ import BoxHandler from "../../components/BoxHandler"
 
 import * as S from "./styled"
 
-const trackClickLab = item => {
+const trackClickCode = item => {
   ReactGA.event({
-    category: "Lab",
+    category: "Code",
     action: "click",
-    label: `Lab - Going to ${item}`,
+    label: `Code - Going to ${item}`,
   })
 }
 
-const LabImg = ({ imageSrc }) => {
+const CodeImg = ({ imageSrc }) => {
   const { images } = useStaticQuery(
     graphql`
       query {
-        images: allFile(filter: { sourceInstanceName: { eq: "lab" } }) {
+        images: allFile(filter: { sourceInstanceName: { eq: "code" } }) {
           edges {
             node {
               extension
               relativePath
               childImageSharp {
-                fluid(maxWidth: 300) {
+                fluid(maxWidth: 300, maxHeight: 200) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -44,33 +44,33 @@ const LabImg = ({ imageSrc }) => {
   return <S.Image fluid={image.node.childImageSharp.fluid} />
 }
 
-const Lab = ({ content }) => {
+const Code = ({ content }) => {
   return (
-    <S.LabList>
+    <S.CodeList>
       {content.map(({ node }) => {
         return (
-          <S.LabItem
+          <S.CodeItem
             key={node.id}
             href={node.path}
             title={node.title}
             type={node.type}
-            onClick={() => trackClickLab}
+            onClick={() => trackClickCode}
           >
             <BoxHandler>
-              <LabImg imageSrc={node.imageSrc} />
+              <CodeImg imageSrc={node.imageSrc} />
               <DateTime>{node.date}</DateTime>
               <S.Title>{node.title}</S.Title>
               <S.Text>{node.description}</S.Text>
             </BoxHandler>
-          </S.LabItem>
+          </S.CodeItem>
         )
       })}
-    </S.LabList>
+    </S.CodeList>
   )
 }
 
-Lab.propTypes = {
+Code.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default Lab
+export default Code

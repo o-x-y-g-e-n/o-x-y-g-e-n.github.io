@@ -2,8 +2,9 @@
 title: "Web Scraping with Sentiment Analysis"
 date: 2018-12-01 00:00:01
 description: "Sentiment Analysis on Reviews Classified by Aspect Terms"
-image: /assets/2018-12-01-como-contribuir-com-open-source.png
-tags: ["open source", "github", "comunidade"]
+tags: ["web scraping", "sentiment analysis", "data visualization", "natural language processing"]
+image: /assets/sentiment_header_main.png
+
 ---
 ![](assets/sentiment_header.png)
 ## Project Details : Broad Specifications

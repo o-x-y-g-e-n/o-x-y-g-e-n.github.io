@@ -1,8 +1,8 @@
 ---
 title: "How Might We Enable More Young People to Become Social Entrepreneurs?"
-date: 2013-05-06 00:00:01
+date: 2020-09-06 00:00:01
 description: "A design challenge from the course `Introduction to Human-centered Design` provided by Acumen Academy and IDEO.org"
-tags: ["javascript, bot, whatsapp, automation"]
+tags: ["design, ux research, acumen, social change", social entrepreneurs]
 image: /assets/wa_header.jpg
 ---
 ![](assets/acumen_header.png)

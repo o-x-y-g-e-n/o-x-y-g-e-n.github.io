@@ -1,8 +1,8 @@
 backend:
   name: github
-  repo: felipefialho/felipefialho.com
+  repo: o-x-y-g-e-n/personal-website
   branch: master
-  #site_domain: felipefialho.com
+  #site_domain: shivamgohel.com
 
 media_folder: static/assets/posts
 public_folder: assets

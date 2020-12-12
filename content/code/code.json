@@ -2,25 +2,22 @@
   {
     "path": "https://github.com/o-x-y-g-e-n/Facebook-AutoReply-Bot",
     "date": "2019",
-    "title": "Facebook Auto-reply Bot",
+    "title": "Facebook Auto-Reply Bot",
     "description": "Responds to all new messages with a message.",
-    "imageSrc": "facebook.jpg",
-    "type" : "blog"
+    "imageSrc": "facebook-auto-reply-bot.png"
   },
   {
-    "path": "http://localhost:8000/blog/web-scraping-with-sentiment-analysis/",
+    "path": "https://github.com/o-x-y-g-e-n/web-scraping-with-sentiment-analysis/",
     "date": "2019",
     "title": "Web Scraping with Sentiment Analysis",
     "description": "Sentiment Analysis on Reviews Classified by Aspect Terms",
-    "imageSrc": "facebook.jpg",
-    "type" : "blog"
+    "imageSrc": "sentiment-analysis.png"
   },
   {
-    "path": "https://github.com/o-x-y-g-e-n/Facebook-AutoReply-Bot",
+    "path": "https://github.com/o-x-y-g-e-n/whatsapp-assistant-bot",
     "date": "2019",
     "title": "Whatsapp Assistant Bot",
     "description": "Google Like assistant in whatsapp",
-    "imageSrc": "facebook.jpg",
-    "type" : "repo"
+    "imageSrc": "whatsapp-chat-bot.png"
   }
 ]

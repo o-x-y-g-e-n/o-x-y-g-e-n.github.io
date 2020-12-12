@@ -23,7 +23,7 @@ const Tags = ({ tags, isLink }) => {
         <S.TagHolder key={i}>
           {isLink ? (
             <AniLink
-              to={`blog?query=` + tag}
+              to={`research?query=` + tag}
               cover
               direction="down"
               duration={1}

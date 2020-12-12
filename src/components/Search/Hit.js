@@ -1,13 +1,13 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import BlogItem from "../../components/BlogItem"
+import ResearchItem from "../ResearchItem"
 
 const Hit = props => {
   const { hit } = props
 
   return (
-    <BlogItem
+    <ResearchItem
       slug={hit.fields.slug}
       date={hit.date}
       title={hit.title}

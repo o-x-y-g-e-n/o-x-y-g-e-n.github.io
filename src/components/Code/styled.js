@@ -4,14 +4,14 @@ import Img from "gatsby-image"
 import * as V from "../../styles/variables"
 import * as T from "../../styles/typography"
 
-export const LabList = styled.section`
+export const CodeList = styled.section`
   display: grid;
   grid-column-gap: ${V.Space.default};
   grid-row-gap: ${V.Space.default};
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 `
 
-export const LabItem = styled.a.attrs(props => ({
+export const CodeItem = styled.a.attrs(props => ({
   href: props.href,
   title: props.title,
   target: "_blank",

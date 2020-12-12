@@ -33,7 +33,7 @@ const Pagination = ({
       </ButtonLink>
     )}
     <span>
-      {currentPage} de {numPages}
+      {currentPage} of {numPages}
     </span>
     {!isLast && (
       <ButtonLink

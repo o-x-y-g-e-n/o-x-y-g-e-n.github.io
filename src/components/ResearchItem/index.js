@@ -11,13 +11,13 @@ import * as S from "./styled"
 
 const trackClick = ({ item, label }) => {
   ReactGA.event({
-    category: "Blog",
+    category: "Research",
     action: "click",
-    label: `${label || "Blog List"} - Go to ${item}`,
+    label: `${label || "Research List"} - Go to ${item}`,
   })
 }
 
-const BlogItem = ({
+const ResearchItem = ({
   slug,
   date,
   timeToRead,
@@ -27,7 +27,7 @@ const BlogItem = ({
   isMini,
 }) => {
   return (
-    <S.BlogItem
+    <S.ResearchItem
       to={`/${slug}`}
       cover
       direction="down"
@@ -47,11 +47,11 @@ const BlogItem = ({
         {description && <S.Subtitle>{description}</S.Subtitle>}
         {tags && <Tags tags={tags} />}
       </BoxHandler>
-    </S.BlogItem>
+    </S.ResearchItem>
   )
 }
 
-BlogItem.propTypes = {
+ResearchItem.propTypes = {
   slug: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   date: PropTypes.string,
@@ -61,4 +61,4 @@ BlogItem.propTypes = {
   isMini: PropTypes.bool,
 }
 
-export default BlogItem
+export default ResearchItem

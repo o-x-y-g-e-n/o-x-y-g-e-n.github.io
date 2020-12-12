@@ -3,11 +3,11 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Layout from "../components/Layout"
 import SEO from "../components/Seo"
-import Lab from "../components/Lab"
+import Code from "../components/Code"
 
-const labJsonQuery = graphql`
+const CodeJsonQuery = graphql`
   query {
-    allLabJson {
+    allCodeJson {
       edges {
         node {
           id
@@ -24,19 +24,19 @@ const labJsonQuery = graphql`
   }
 `
 
-const LabPage = () => {
-  const data = useStaticQuery(labJsonQuery)
+const CodePage = () => {
+  const data = useStaticQuery(CodeJsonQuery)
 
   return (
     <Layout>
       <SEO
-        title="Lab"
+        title="Code"
         lang="en"
         description="Check here all my open source projects and some experiences about coding"
       />
-      <Lab content={data.allLabJson.edges} />
+      <Code content={data.allCodeJson.edges} />
     </Layout>
   )
 }
 
-export default LabPage
+export default CodePage

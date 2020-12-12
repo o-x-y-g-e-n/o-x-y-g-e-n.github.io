@@ -1,9 +1,9 @@
 ---
 title: "The Patient Centered Value System"
-date: 2013-05-06 00:00:01
+date: 2020-12-01 00:00:01
 description: "Transforming Healthcare through Co-Design"
-tags: ["javascript, bot, whatsapp, automation"]
-image: /assets/wa_header.jpg
+tags: ["family centered care, design, shadowing, healthcare, healthtech"]
+image: /assets/pcc_header.jpg
 ---
 ![](assets/pcc_header.png)
 > The existing deficiencies in health care cannot be corrected simply by supplying more personnel, more facilities and more money. These problems can only be solved by organizing the personnel, facilities and financing into a conceptual framework and operating system that will provide optimally for the health needs of the population.

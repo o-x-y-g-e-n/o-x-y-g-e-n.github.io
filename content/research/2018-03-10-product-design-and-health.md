@@ -1,6 +1,6 @@
 ---
-title: "Whatsapp Assistant Bot"
-date: 2013-05-06 00:00:01
+title: "Home Monitoring Solutions for children with Epilepsy"
+date: 2020-12-06 00:00:01
 description: "Google Like assistant in whatsapp."
 tags: ["javascript, bot, whatsapp, automation"]
 image: /assets/wa_header.jpg

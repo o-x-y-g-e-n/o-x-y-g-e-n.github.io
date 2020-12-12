@@ -1,8 +1,8 @@
 ---
-title: "Home Monitoring Solutions for children with Epilepsy"
-date: 2013-05-06 00:00:01
+title: "Whatsapp Assistant Bot"
+date: 2018-10-06 00:00:01
 description: "Google Like assistant in whatsapp."
-tags: ["javascript, bot, whatsapp, automation"]
+tags: ["python, bot, whatsapp, automation, selenium"]
 image: /assets/wa_header.jpg
 ---
 ![headerPhoto](assets/wa_post_header.png)

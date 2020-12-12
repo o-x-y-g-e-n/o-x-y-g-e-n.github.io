@@ -9,11 +9,11 @@ import Content from "components/Content"
 import SEO from "components/Seo"
 import GridTemplate from "components/GridTemplate"
 
-const trackLabsClick = () => {
+const trackCodeClick = () => {
   ReactGA.event({
     category: "404",
     action: "click",
-    label: `404 - Go to labs`,
+    label: `404 - Go to code`,
   })
 }
 
@@ -44,8 +44,8 @@ const NotFoundPage = () => {
               bg={getActiveTheme()}
               direction="down"
               duration={1}
-              to="/lab/"
-              onClick={() => trackLabsClick()}
+              to="/code/"
+              onClick={() => trackCodeClick()}
             >
               personal projects
             </AniLink>

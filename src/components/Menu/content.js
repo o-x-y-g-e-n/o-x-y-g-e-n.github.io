@@ -4,12 +4,12 @@ const menuLinks = [
     url: "/hi/",
   },
   {
-    label: "blog",
-    url: "/blog/",
+    label: "research",
+    url: "/research/",
   },
   {
-    label: "lab",
-    url: "/lab/",
+    label: "code",
+    url: "/code/",
   },
 ]
 

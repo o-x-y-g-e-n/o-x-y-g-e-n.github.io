@@ -4,7 +4,7 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 import * as V from "styles/variables"
 import * as T from "styles/typography"
 
-export const BlogItem = styled(AniLink)`
+export const ResearchItem = styled(AniLink)`
   color: var(--primaryColor);
   display: block;
 
