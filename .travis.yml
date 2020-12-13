@@ -11,7 +11,6 @@ notification:
     on_success: always
     on_failure: always
 script:
-  - gatsby clean # clean the .cache
   - gatsby build # Generate static HTML files
 
 # Here is the magic part
