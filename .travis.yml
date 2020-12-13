@@ -1,15 +1,6 @@
 language: node_js
 node_js:
   - 'stable'
-cache:
-  directories:
-    - .cache
-notification:
-  email:
-    recipients:
-      - shivamgohel777@gmail.com
-    on_success: always
-    on_failure: always
 script:
   - gatsby build # Generate static HTML files
 
