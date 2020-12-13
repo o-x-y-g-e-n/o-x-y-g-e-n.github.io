@@ -5,33 +5,36 @@ description: "A design challenge from the course `Introduction to Human-centered
 tags: ["design, ux research, acumen, social change", social entrepreneurs]
 image: /assets/wa_header.jpg
 ---
+
 ![](assets/acumen_header.png)
 **Role and Duration**
 
 Conduct Research, Story telling, Wireframing.
 
-*September 2019 - November 2019*
+_September 2019 - November 2019_
 
 **Tools**
-* [Miro](https://miro.com/app/) - online collaborative whiteboard platform
-* [Zoom](https://zoom.us/) - software-based conference room solution
-* [Google Meet](https://meet.google.com/) - Real-time meetings by Google. 
-* [Google Forms](https://www.google.com/forms/about/) -  survey administration software 
+
+- [Miro](https://miro.com/app/) - online collaborative whiteboard platform
+- [Zoom](https://zoom.us/) - software-based conference room solution
+- [Google Meet](https://meet.google.com/) - Real-time meetings by Google.
+- [Google Forms](https://www.google.com/forms/about/) - survey administration software
 
 ## The Challenge
+
 ![Acumen Challenge](assets/acumen_challenge.png)
 
-
 ### The Design Process
-The human-centered design process has three phases—**the Inspiration phase**, **the Ideation phase**, and **the Implementation phase**. we`ve kept the people we’re looking to serve at the heart of the process.
 
+The human-centered design process has three phases—**the Inspiration phase**, **the Ideation phase**, and **the Implementation phase**. we`ve kept the people we’re looking to serve at the heart of the process.
 
 ### INSPIRATION
 
 **I have a design challenge.**
-> How do I get started? 
-How do I conduct an interview?
-How do I stay human-centered?
+
+> How do I get started?
+> How do I conduct an interview?
+> How do I stay human-centered?
 
 ![](assets/acumen_inspiration_phase.png)
 
@@ -53,16 +56,19 @@ With a curious mindset, inspiration and new perspectives can be found in many pl
 What are the activities, emotions, and behaviors that make up the experience of the challenge? Now select similar scenarios that you would like to observe in places and situations that are different than the design challenge.
 
 ### Building an Interview Guide
-**Objectives**:
-* The Motivation to start his/her own company
-* Undertstanding how he/she brought an idea to life
-* The challenges faced during the process of moving from an idea to startup
-    * Mentorship & Network
-    * Captial
-    * Startup Community Support
-* Understanding how he measures impact.
 
-We brainstormed a lot of questions, some relevant to the challenges, some personal, and some to make them feel comfortable. Finally, we prepared a `mindmap` of questions and who / when is gonna lead the story. Some of the important questions were, 
+**Objectives**:
+
+- The Motivation to start his/her own company
+- Undertstanding how he/she brought an idea to life
+- The challenges faced during the process of moving from an idea to startup
+  - Mentorship & Network
+  - Captial
+  - Startup Community Support
+- Understanding how he measures impact.
+
+We brainstormed a lot of questions, some relevant to the challenges, some personal, and some to make them feel comfortable. Finally, we prepared a `mindmap` of questions and who / when is gonna lead the story. Some of the important questions were,
+
 > How did you start your journey as an entrepreneur? From the beginning till now?
 
 > Can you tell me about your expectations? ​ What did you expect to find and **what made you frustrated**?
@@ -76,11 +82,12 @@ We brainstormed a lot of questions, some relevant to the challenges, some person
 > How can we improve today’s existing mentorship programs?
 
 ### Conducting the Research
-We divided the team into 2 groups, one the *India Group* and other the *Turkey Group*, so that it would be easy for us, to conduct interviews, and while one of the member is asking the questions, others can **shadow** (observe and take notes). After rigorous interviews, we converted each learning into a **story**.
+
+We divided the team into 2 groups, one the _India Group_ and other the _Turkey Group_, so that it would be easy for us, to conduct interviews, and while one of the member is asking the questions, others can **shadow** (observe and take notes). After rigorous interviews, we converted each learning into a **story**.
 
 **Key Learnings from Research**
 ![](assets/acumen_random_thoughts.png)
-Below are highlights from all the groups & all different locations (remotely) where we conducted interviews. 
+Below are highlights from all the groups & all different locations (remotely) where we conducted interviews.
 
 > People lack inner motivation and avoid working hard and care less about society
 
@@ -98,8 +105,7 @@ Below are highlights from all the groups & all different locations (remotely) wh
 
 > Networking is extremely crucial for Entrepreneurs
 
-
-We also distributed ***surveys*** among various active groups over social media. We were able to get very useful insights from that as well. We brainstormed top questions for the survey, with accurate and temptive options.
+We also distributed **_surveys_** among various active groups over social media. We were able to get very useful insights from that as well. We brainstormed top questions for the survey, with accurate and temptive options.
 
 ![](assets/acumen_chart_challenge.png)
 
@@ -113,41 +119,43 @@ We also distributed ***surveys*** among various active groups over social media.
 
 ![](assets/acumen_chart_improvise.png)
 
-
-
-
-
 ### IDEATION
+
 **I have an opportunity for design.**
+
 > How do I interpret what I’ve learned?
-How do I turn my insights into 
-tangible ideas? 
-How do I make a prototype?
+> How do I turn my insights into
+> tangible ideas?
+> How do I make a prototype?
 
 ![](assets/acumen_ideation_phase.png.png)
 
 ### Cluster Into Themes
-The goal for this exercise was to make sense out of the stories we heard and begin looking for themes to design around. The goal was to identify ***gems***, cluster information into themes, finding supportive evidences, refining clusters and writing headlines on the storyboard. We used *Miro* to gather & brainstorm all the information gathered.
+
+The goal for this exercise was to make sense out of the stories we heard and begin looking for themes to design around. The goal was to identify **_gems_**, cluster information into themes, finding supportive evidences, refining clusters and writing headlines on the storyboard. We used _Miro_ to gather & brainstorm all the information gathered.
 ![](acumen_ideation_dashboard.jpg)
 
 The key headlines were:
-* Ethical Values
-* Mentorship
-* Obstacles
-* Social Entrepreneurship Programs
-* Networking
-* Financial 
-* Awareness
-* Motivation
-* Young
 
-We narrowed down from the above headlines to three major challenging topics, and formed ***How might we?*** questions for the headlines. The selected headlines were:
-* Financial, *constraints & challenges*
-* Awareness, *about different programs among different sectors*
-* Mentorship, *for young people by experienced and leaders in the sector*
-![](assets/acumen_ideation_hmw_questions.jpg)
+- Ethical Values
+- Mentorship
+- Obstacles
+- Social Entrepreneurship Programs
+- Networking
+- Financial
+- Awareness
+- Motivation
+- Young
 
-The following were the selected *How might we?*  questions,
+We narrowed down from the above headlines to three major challenging topics, and formed **_How might we?_** questions for the headlines. The selected headlines were:
+
+- Financial, _constraints & challenges_
+- Awareness, _about different programs among different sectors_
+- Mentorship, _for young people by experienced and leaders in the sector_
+  ![](assets/acumen_ideation_hmw_questions.jpg)
+
+The following were the selected _How might we?_ questions,
+
 > HMW take care of financials when people begin their social entrepreneurship journey?
 
 > HMW create awareness about social entrepreneurships that they are real business that needs money?
@@ -180,9 +188,10 @@ the end-to-end experience a user might have with your idea over time. We also id
 ### Implementation
 
 **I have an innovative solution.**
+
 > How do I make my concept real?
-How do I assess if it’s working?
-How do I plan for sustainability?
+> How do I assess if it’s working?
+> How do I plan for sustainability?
 
 ![](acumen_wireframing.png)
 
@@ -192,6 +201,6 @@ Then we created (rough) wireframes for an mobile application.
 ![](acumen_wireframe_2.jpg)
 ![](acumen_wireframe_3.jpg)
 
-
 ### What's next?
+
 We still have a long way to go. From creating high fidelity prototypes to pitching our idea, the process will continue.

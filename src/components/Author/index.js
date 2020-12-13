@@ -15,8 +15,8 @@ const Author = ({ fullText }) => {
             I've been working as{" "}
             <span itemProp="jobTitle">Software Engineer</span> since 2019. I'm
             passionate about open source projects. I thrive to improve processes
-            and user engagement. I am trying to connect the dots between design, technology
-            and healthcare.
+            and user engagement. I am trying to connect the dots between design,
+            technology and healthcare.
           </p>
 
           <p>
@@ -29,14 +29,15 @@ const Author = ({ fullText }) => {
               itemProp="affiliation"
             >
               Infostretch Corporation
-            </a>{" "}.
+            </a>{" "}
+            .
           </p>
 
-      {fullText && (
+          {fullText && (
             <>
               <p>
-                I've been creating and contributing to few open source projects in the last
-                years, for example:
+                I've been creating and contributing to few open source projects
+                in the last years, for example:
               </p>
             </>
           )}
@@ -102,13 +103,14 @@ const Author = ({ fullText }) => {
             </ul>
           </>
         )}
-           {fullText && (
-            <>
-              <p>
-                I try to stay updated with current technology and domain trends, see my recent participation here:
-              </p>
-            </>
-          )}
+        {fullText && (
+          <>
+            <p>
+              I try to stay updated with current technology and domain trends,
+              see my recent participation here:
+            </p>
+          </>
+        )}
         {fullText && (
           <>
             <ul>
@@ -142,16 +144,14 @@ const Author = ({ fullText }) => {
                   rel="noopener noreferrer"
                   title="Introduction to Human-centered Design"
                 >
-                  Introduction to Human-centered Design <span>by Acumen Academy</span>
+                  Introduction to Human-centered Design{" "}
+                  <span>by Acumen Academy</span>
                 </a>
               </li>
-            
             </ul>
           </>
         )}
-      
       </div>
-     
     </Content>
   )
 }

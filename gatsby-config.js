@@ -3,7 +3,7 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
-const queries = require("./src/utils/algolia")
+// const queries = require("./src/utils/algolia")
 
 const feeds = [
   {
@@ -134,7 +134,7 @@ const plugins = [
           resolve: "gatsby-remark-relative-images",
         },
         {
-          resolve: "@pauliescanlon/gatsby-remark-sticky-table"
+          resolve: "@pauliescanlon/gatsby-remark-sticky-table",
         },
         {
           resolve: "gatsby-remark-images-zoom",
@@ -185,16 +185,16 @@ const plugins = [
 ]
 
 if (process.env.CONTEXT === "production") {
-  const algolia = {
-    resolve: `npm install --save gatsby-plugin-algolia-search`,
-    options: {
-      appId: process.env.GATSBY_ALGOLIA_APP_ID,
-      apiKey: process.env.ALGOLIA_ADMIN_KEY,
-      queries,
-      chunkSize: 10000, // default: 1000
-      enablePartialUpdates: true,
-    },
-  }
+  // const algolia = {
+  //   resolve: `npm install --save gatsby-plugin-algolia-search`,
+  //   options: {
+  //     appId: process.env.GATSBY_ALGOLIA_APP_ID,
+  //     apiKey: process.env.ALGOLIA_ADMIN_KEY,
+  //     queries,
+  //     chunkSize: 10000, // default: 1000
+  //     enablePartialUpdates: true,
+  //   },
+  // }
 
   const analytics = {
     resolve: `gatsby-plugin-google-analytics`,
@@ -205,7 +205,7 @@ if (process.env.CONTEXT === "production") {
   }
 
   plugins.push(algolia)
-  plugins.push(analytics)
+  // plugins.push(analytics)
 }
 
 module.exports = {

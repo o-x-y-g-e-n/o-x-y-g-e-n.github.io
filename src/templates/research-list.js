@@ -21,7 +21,6 @@ const ResearchList = props => {
   const content = () => {
     return (
       <>
-        
         {list.map(({ node }, i) => (
           <ResearchItem
             key={i}
