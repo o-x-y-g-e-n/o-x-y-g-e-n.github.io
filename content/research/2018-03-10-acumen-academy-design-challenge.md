@@ -3,7 +3,7 @@ title: "How Might We Enable More Young People to Become Social Entrepreneurs?"
 date: 2020-09-06 00:00:01
 description: "A design challenge from the course `Introduction to Human-centered Design` provided by Acumen Academy and IDEO.org"
 tags: ["design, ux research, acumen, social change", social entrepreneurs]
-image: /assets/wa_header.jpg
+image: /assets/acumen_title_header.jpg
 ---
 
 ![](assets/acumen_header.png)
@@ -63,7 +63,7 @@ What are the activities, emotions, and behaviors that make up the experience of 
 - Undertstanding how he/she brought an idea to life
 - The challenges faced during the process of moving from an idea to startup
   - Mentorship & Network
-  - Captial
+  - Capital
   - Startup Community Support
 - Understanding how he measures impact.
 

@@ -22,6 +22,7 @@ const Social = () => {
               linkedinLink
               githubLink
               mediumLink
+              gmailLink
             }
           }
         }
@@ -52,6 +53,14 @@ const Social = () => {
       >
         <S.SocialMedium />
       </S.SocialItem>
+      <S.SocialItem
+        href={site.siteMetadata.social.gmailLink}
+        title="Mail"
+        onClick={() => trackClick("Gmail")}
+      >
+           <S.SocialGmail />
+      </S.SocialItem>
+     
     </S.Social>
   )
 }

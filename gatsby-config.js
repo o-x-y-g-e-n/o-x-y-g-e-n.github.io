@@ -225,6 +225,7 @@ module.exports = {
       linkedinLink: `https://www.linkedin.com/in/shivamgohel/`,
       githubLink: `https://github.com/o-x-y-g-e-n`,
       mediumLink: `https://medium.com/@shivamgohel777`,
+      gmailLink: 'mailto:shivamgohel777@gmail.com'
     },
   },
   plugins,
