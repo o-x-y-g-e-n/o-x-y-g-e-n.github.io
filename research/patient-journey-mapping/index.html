@@ -1,0 +1,510 @@
+<!DOCTYPE html><html lang="en-in"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"/><style data-href="/styles.2e029328e57ce44414c2.css">.tl-edges{max-width:100%;overflow-x:hidden}.tl-wrapper{width:100%;float:left;position:relative}.tl-wrapper+.tl-wrapper{margin-left:-100%;margin-right:0}code[class*=language-],pre[class*=language-]{color:#f8f8f2;background:none;text-shadow:0 1px rgba(0,0,0,.3);font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto;border-radius:.3em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#272822}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#8292a2}.token.punctuation{color:#f8f8f2}.token.namespace{opacity:.7}.token.constant,.token.deleted,.token.property,.token.symbol,.token.tag{color:#f92672}.token.boolean,.token.number{color:#ae81ff}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#a6e22e}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url,.token.variable{color:#f8f8f2}.token.atrule,.token.attr-value,.token.class-name,.token.function{color:#e6db74}.token.keyword{color:#66d9ef}.token.important,.token.regex{color:#fd971f}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><meta name="generator" content="Gatsby 2.24.79"/><title data-react-helmet="true">Patient Journey Mapping for Home Monitoring Solutions for children with Epilepsy | Shivam Gohel - Full Stack Developer</title><meta data-react-helmet="true" name="description" content="Design in Healthcare: Using Patient Journey Mapping"/><meta data-react-helmet="true" property="og:image" content="https://felipefialho.com/static/a7d3acffcf8afe3cf966a2c32fdff55a/pjourney_header.jpg"/><meta data-react-helmet="true" property="og:title" content="Patient Journey Mapping for Home Monitoring Solutions for children with Epilepsy | Shivam Gohel - Full Stack Developer"/><meta data-react-helmet="true" property="og:description" content="Design in Healthcare: Using Patient Journey Mapping"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"/><meta data-react-helmet="true" name="twitter:image" content="https://felipefialho.com/static/a7d3acffcf8afe3cf966a2c32fdff55a/pjourney_header.jpg"/><meta data-react-helmet="true" name="twitter:title" content="Patient Journey Mapping for Home Monitoring Solutions for children with Epilepsy | Shivam Gohel - Full Stack Developer"/><meta data-react-helmet="true" name="twitter:description" content="Design in Healthcare: Using Patient Journey Mapping"/><style data-styled="" data-styled-version="5.2.1">html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font:inherit;font-size:100%;margin:0;padding:0;vertical-align:baseline;}/*!sc*/
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}/*!sc*/
+ol,ul{list-style:none;}/*!sc*/
+*{box-sizing:border-box;}/*!sc*/
+a{-webkit-text-decoration:none;text-decoration:none;}/*!sc*/
+thead th{font-weight:400;background:var(--bgSecondary);color:var(--primaryColor);}/*!sc*/
+tr{background:var(--bgPrimary);border-bottom:1px solid #FFF;margin-bottom:5px;}/*!sc*/
+tbody:nth-child(odd){background:var(--bgSecondary);}/*!sc*/
+th,td{color :var(--primaryColor);text-align:left;padding:20px;font-weight:300;}/*!sc*/
+button{background:none;border:0;padding:0;}/*!sc*/
+img{display:block;height:auto;max-width:100%;}/*!sc*/
+svg{fill:currentColor;}/*!sc*/
+.small,small{font-size:.8em;}/*!sc*/
+html{font-size:10px;-moz-osx-font-smoothing:antialiased;-webkit-font-smoothing:antialiased;-webkit-overflow-scrolling:touch;}/*!sc*/
+b,strong{font-weight:600;}/*!sc*/
+i,em{font-style:italic;}/*!sc*/
+input[type="search"]{-webkit-appearance:textfield;}/*!sc*/
+input[type="search"]::-webkit-search-decoration,input[type="search"]::-webkit-search-cancel-button{-webkit-appearance:none;}/*!sc*/
+*::-webkit-input-placeholder{color:var(--secondaryColor);}/*!sc*/
+*::-moz-placeholder{color:var(--secondaryColor);}/*!sc*/
+*:-ms-input-placeholder{color:var(--secondaryColor);}/*!sc*/
+*::placeholder{color:var(--secondaryColor);}/*!sc*/
+*::-webkit-input-placeholder{color:var(--secondaryColor);}/*!sc*/
+body{background-color:var(--bg);color:var(--primaryColor);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;font-size:2rem;min-height:calc(100vh);-webkit-overflow-scrolling:touch;overflow-x:hidden;text-rendering:optimizeLegibility;-webkit-transition:background-color .25s;transition:background-color .25s;will-change:background-color;--bg:rgba(255,255,255,.9);--bgSolid:#ffffff;--bgSecondary:#f1f1f1;--borderColor:#f1f1f1;--highlightColor:#187888;--primaryColor:rgba(15,15,15,.95);--secondaryColor:#757575;--boxShadow:rgba(18,18,18,.12);}/*!sc*/
+body.theme-dark{--bg:#1d1d1d;--bgSolid:#000000;--bgSecondary:#2d2d2d;--borderColor:#2d2d2d;--highlightColor:#a1ecf7;--primaryColor:rgba(255,255,255,.9);--secondaryColor:#aaaaaa;--boxShadow:rgba(250,250,250,.12);}/*!sc*/
+p a{color:var(--highlightColor);}/*!sc*/
+::selection{background:var(--highlightColor);color:rgba(255,255,255,.9);}/*!sc*/
+@media (prefers-reduced-motion:reduce){*{-webkit-animation:none;animation:none;-webkit-transition:none;transition:none;}}/*!sc*/
+data-styled.g1[id="sc-global-hHxXVu1"]{content:"sc-global-hHxXVu1,"}/*!sc*/
+.fJmmUZ{margin-left:auto;margin-right:auto;max-width:1080px;padding-left:1.6rem;padding-right:1.6rem;}/*!sc*/
+@media (min-width:768px){.fJmmUZ{padding-left:2.4rem;padding-right:2.4rem;}}/*!sc*/
+data-styled.g4[id="styled__Container-esc74j-0"]{content:"fJmmUZ,"}/*!sc*/
+.wXioE{display:inline-block;vertical-align:middle;overflow:hidden;}/*!sc*/
+data-styled.g12[id="sc-bdfBwQ"]{content:"wXioE,"}/*!sc*/
+.gLwNHK{bottom:4rem;color:var(--secondaryColor);font-size:1.2rem;margin-bottom:1.6rem;position:absolute;text-align:center;width:100%;}/*!sc*/
+.gLwNHK .link{color:var(--secondaryColor);}/*!sc*/
+.gLwNHK .link:hover{-webkit-text-decoration:underline;text-decoration:underline;}/*!sc*/
+.gLwNHK .link:before{content:"•";display:inline-block;margin:0 .4rem;}/*!sc*/
+data-styled.g21[id="styled__FooterData-jnnxg8-0"]{content:"gLwNHK,"}/*!sc*/
+.bFceSq{background-color:var(--bg);display:block;-webkit-transition:background-color .25s;transition:background-color .25s;will-change:background-color;}/*!sc*/
+data-styled.g22[id="styled__Layout-sc-119k7r-0"]{content:"bFceSq,"}/*!sc*/
+.ibvafm{margin-bottom:4rem;margin-top:4.8rem;min-height:100vh;padding-bottom:9.6rem;padding-top:3.2rem;width:100%;}/*!sc*/
+@media (min-width:768px){.ibvafm{margin-top:6.4rem;}}/*!sc*/
+data-styled.g23[id="styled__Main-sc-119k7r-1"]{content:"ibvafm,"}/*!sc*/
+.bIKwfA{font-size:2rem;font-weight:400;-webkit-letter-spacing:-0.04px;-moz-letter-spacing:-0.04px;-ms-letter-spacing:-0.04px;letter-spacing:-0.04px;line-height:1.5em;}/*!sc*/
+.bIKwfA:not(:first-child){margin-top:3.2rem;}/*!sc*/
+.bIKwfA:not(:last-child){margin-bottom:3.2rem;}/*!sc*/
+.bIKwfA h1{color:var(--primaryColor);font-size:2.6rem;font-weight:600;-webkit-letter-spacing:-0.022em;-moz-letter-spacing:-0.022em;-ms-letter-spacing:-0.022em;letter-spacing:-0.022em;line-height:1.3em;}/*!sc*/
+@media (min-width:768px){.bIKwfA h1{font-size:3rem;}}/*!sc*/
+.bIKwfA h1:not(:first-child){margin-top:4.8rem;}/*!sc*/
+.bIKwfA h1:not(:last-child){margin-bottom:2.4rem;}/*!sc*/
+.bIKwfA h2{color:var(--primaryColor);font-size:2.6rem;font-weight:600;-webkit-letter-spacing:-0.022em;-moz-letter-spacing:-0.022em;-ms-letter-spacing:-0.022em;letter-spacing:-0.022em;line-height:1.3em;}/*!sc*/
+@media (min-width:768px){.bIKwfA h2{font-size:3rem;}}/*!sc*/
+.bIKwfA h2:not(:first-child){margin-top:4.8rem;}/*!sc*/
+.bIKwfA h2:not(:last-child){margin-bottom:2.4rem;}/*!sc*/
+.bIKwfA h3{color:var(--primaryColor);font-size:2.1rem;font-weight:600;-webkit-letter-spacing:-0.04px;-moz-letter-spacing:-0.04px;-ms-letter-spacing:-0.04px;letter-spacing:-0.04px;line-height:1.5em;}/*!sc*/
+@media (min-width:768px){.bIKwfA h3{font-size:2.4rem;}}/*!sc*/
+.bIKwfA h3:not(:first-child){margin-top:3.2rem;}/*!sc*/
+.bIKwfA h3:not(:last-child){margin-bottom:1.6rem;}/*!sc*/
+.bIKwfA p:not(:last-child){margin-bottom:2.4rem;}/*!sc*/
+.bIKwfA a{color:var(--highlightColor);}/*!sc*/
+.bIKwfA a{border-bottom:2px solid transparent;-webkit-transition:border-color .25s;transition:border-color .25s;padding-bottom:0.1rem;will-change:border-color;}/*!sc*/
+.bIKwfA a:hover{border-color:var(--highlightColor);}/*!sc*/
+.bIKwfA blockquote{border-left:.4rem solid var(--highlightColor);font-style:italic;overflow-wrap:break-word;padding-bottom:1.6rem;padding-left:2.4rem;padding-top:1.6rem;}/*!sc*/
+.bIKwfA blockquote{color:var(--primaryColor);font-size:2.1rem;font-weight:400;-webkit-letter-spacing:-0.04px;-moz-letter-spacing:-0.04px;-ms-letter-spacing:-0.04px;letter-spacing:-0.04px;line-height:1.5em;}/*!sc*/
+@media (min-width:768px){.bIKwfA blockquote{font-size:2.4rem;}}/*!sc*/
+.bIKwfA blockquote:not(:first-child){margin-top:4.8rem;}/*!sc*/
+.bIKwfA blockquote:not(:last-child){margin-bottom:4.8rem;}/*!sc*/
+.bIKwfA ol{list-style-type:decimal;}/*!sc*/
+.bIKwfA ul{list-style-type:disc;}/*!sc*/
+.bIKwfA ol,.bIKwfA ul{padding-left:2.5rem;}/*!sc*/
+.bIKwfA ol:not(:last-child),.bIKwfA ul:not(:last-child){margin-bottom:2.4rem;}/*!sc*/
+.bIKwfA li:not(:last-child){margin-bottom:1.6rem;}/*!sc*/
+.bIKwfA img,.bIKwfA .gatsby-resp-image-wrapper{width:100%;}/*!sc*/
+.bIKwfA img + em,.bIKwfA .gatsby-resp-image-wrapper + em{font-size:1.4rem;}/*!sc*/
+.bIKwfA .gatsby-highlight pre[class*="language-"]{border-left:.4rem solid var(--highlightColor);font-size:1.8rem;padding-left:2.4rem;}/*!sc*/
+@media (max-width:768px){.bIKwfA .gatsby-highlight pre[class*="language-"]{border-radius:0;font-size:1.6rem;margin-left:-1.6rem;margin-right:-1.6rem;}}/*!sc*/
+.bIKwfA .gatsby-highlight:not(:last-child){margin-bottom:2.4rem;}/*!sc*/
+.bIKwfA .language-text{background-color:var(--bgSecondary);color:var(--colorPrimary);font-size:1.8rem;padding-bottom:0.2em;padding-left:0.3em;padding-right:0.3em;padding-top:0.3em;text-shadow:none;}/*!sc*/
+.bIKwfA hr{background-color:var(--borderColor);border:0;height:1px;margin-bottom:2.4rem;margin-top:2.4rem;}/*!sc*/
+.bIKwfA .twitter-tweet{font-size:1.6rem;font-weight:400;-webkit-letter-spacing:-0.14px;-moz-letter-spacing:-0.14px;-ms-letter-spacing:-0.14px;letter-spacing:-0.14px;line-height:1.55em;}/*!sc*/
+.bIKwfA .twitter-tweet p{border-bottom:1px solid var(--borderColor);font-style:normal;margin-bottom:1.6rem;padding-bottom:1.6rem;}/*!sc*/
+.bIKwfA .twitter-tweet p{color:var(--primaryColor);font-size:2.1rem;font-weight:400;-webkit-letter-spacing:-0.04px;-moz-letter-spacing:-0.04px;-ms-letter-spacing:-0.04px;letter-spacing:-0.04px;line-height:1.5em;}/*!sc*/
+@media (min-width:768px){.bIKwfA .twitter-tweet p{font-size:2.4rem;}}/*!sc*/
+.bIKwfA .twitter-tweet a{font-size:1.6rem;font-weight:400;-webkit-letter-spacing:-0.14px;-moz-letter-spacing:-0.14px;-ms-letter-spacing:-0.14px;letter-spacing:-0.14px;line-height:1.55em;}/*!sc*/
+.bIKwfA .twitter-tweet a:before{content:"";display:block;}/*!sc*/
+.bIKwfA .support-title{color:var(--secondaryColor);font-size:2.1rem;-webkit-letter-spacing:-0.45px;-moz-letter-spacing:-0.45px;-ms-letter-spacing:-0.45px;letter-spacing:-0.45px;line-height:1.5em;}/*!sc*/
+@media (min-width:768px){.bIKwfA .support-title{font-size:2.4rem;}}/*!sc*/
+data-styled.g24[id="styled__Content-sc-7zk7qz-0"]{content:"bIKwfA,"}/*!sc*/
+.cGBcXF{margin-left:auto;margin-right:auto;max-width:65rem;}/*!sc*/
+data-styled.g25[id="styled__GridTemplate-sc-3beusd-0"]{content:"cGBcXF,"}/*!sc*/
+.ilNUir{color:var(--secondaryColor);display:block;font-size:1.2rem;-webkit-letter-spacing:0.1rem;-moz-letter-spacing:0.1rem;-ms-letter-spacing:0.1rem;letter-spacing:0.1rem;}/*!sc*/
+.ilNUir:not(:last-child){margin-bottom:.4rem;}/*!sc*/
+data-styled.g26[id="styled__DateTime-nc852r-0"]{content:"ilNUir,"}/*!sc*/
+.cPNyUc{border:1px solid var(--borderColor);border-radius:2px;box-shadow:0 1px 3px var(--boxShadow);color:var(--primaryColor);display:block;height:100%;min-height:15rem;padding:1.6rem;position:relative;will-change:border-color;}/*!sc*/
+@media (min-width:768px){.cPNyUc{padding:2.4rem;}}/*!sc*/
+.cPNyUc:after,.cPNyUc:before{bottom:0;content:"";left:0;position:absolute;right:0;top:0;-webkit-transition:-webkit-transform .25s;-webkit-transition:transform .25s;transition:transform .25s;}/*!sc*/
+.cPNyUc:before{border-left:1px solid var(--highlightColor);border-right:1px solid var(--highlightColor);-webkit-transform:scaleY(0);-ms-transform:scaleY(0);transform:scaleY(0);}/*!sc*/
+.cPNyUc:after{border-bottom:1px solid var(--highlightColor);border-top:1px solid var(--highlightColor);-webkit-transform:scaleX(0);-ms-transform:scaleX(0);transform:scaleX(0);}/*!sc*/
+.cPNyUc:hover:before{-webkit-transform:scaleY(1);-ms-transform:scaleY(1);transform:scaleY(1);}/*!sc*/
+.cPNyUc:hover:after{-webkit-transform:scaleX(1);-ms-transform:scaleX(1);transform:scaleX(1);}/*!sc*/
+data-styled.g27[id="styled__BoxHandler-sc-1n4boo3-0"]{content:"cPNyUc,"}/*!sc*/
+.dhtKzb{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;color:var(--primaryColor);display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;}/*!sc*/
+.dhtKzb:not(:last-child){margin-bottom:.8rem;}/*!sc*/
+data-styled.g33[id="styled__Tags-v53wrq-0"]{content:"dhtKzb,"}/*!sc*/
+.dewBJt{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;}/*!sc*/
+.dewBJt > a{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;color:var(--primaryColor);display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-transition:color .25s;transition:color .25s;will-change:color;}/*!sc*/
+.dewBJt > a:not(:last-child){margin-right:.4rem;}/*!sc*/
+.dewBJt > a:hover,.dewBJt > a:focus{color:var(--highlightColor);}/*!sc*/
+.dewBJt:not(:last-child){margin-right:.4rem;}/*!sc*/
+.dewBJt:not(:last-child):after{content:", ";height:3rem;}/*!sc*/
+data-styled.g34[id="styled__TagHolder-v53wrq-1"]{content:"dewBJt,"}/*!sc*/
+.fWXpRL{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;font-size:1.3rem;-webkit-letter-spacing:0.1rem;-moz-letter-spacing:0.1rem;-ms-letter-spacing:0.1rem;letter-spacing:0.1rem;text-transform:lowercase;vertical-align:top;}/*!sc*/
+data-styled.g35[id="styled__TagItem-v53wrq-2"]{content:"fWXpRL,"}/*!sc*/
+.jNVYOU{display:block;margin-right:.8rem;width:1.6rem;}/*!sc*/
+data-styled.g36[id="styled__TagIcon-v53wrq-3"]{content:"jNVYOU,"}/*!sc*/
+.ctujWq{color:var(--primaryColor);display:block;}/*!sc*/
+.ctujWq:not(:last-child){margin-bottom:2.4rem;}/*!sc*/
+data-styled.g37[id="styled__ResearchItem-sc-82ttz1-0"]{content:"ctujWq,"}/*!sc*/
+.caLUac{color:var(--primaryColor);font-size:2rem;font-weight:600;-webkit-letter-spacing:-0.04px;-moz-letter-spacing:-0.04px;-ms-letter-spacing:-0.04px;letter-spacing:-0.04px;line-height:1.5em;}/*!sc*/
+.caLUac:not(:first-child){margin-top:.8rem;}/*!sc*/
+.caLUac:not(:last-child){margin-bottom:.8rem;}/*!sc*/
+data-styled.g38[id="styled__Title-sc-82ttz1-1"]{content:"caLUac,"}/*!sc*/
+.giXkww{display:inline-block;font-size:1.6rem;}/*!sc*/
+.giXkww{color:var(--highlightColor);}/*!sc*/
+.giXkww{border-bottom:2px solid transparent;-webkit-transition:border-color .25s;transition:border-color .25s;padding-bottom:0.1rem;will-change:border-color;}/*!sc*/
+.giXkww:hover{border-color:var(--highlightColor);}/*!sc*/
+data-styled.g40[id="styled__ButtonLink-vsjuj8-0"]{content:"giXkww,"}/*!sc*/
+.dGuZKf:not(:last-child){margin-bottom:4.8rem;}/*!sc*/
+data-styled.g45[id="styled__PostHeader-sc-6knld4-0"]{content:"dGuZKf,"}/*!sc*/
+.koHzao:not(:first-child){margin-top:2.4rem;}/*!sc*/
+.koHzao:not(:last-child){margin-bottom:2.4rem;}/*!sc*/
+data-styled.g46[id="styled__ButtonBack-sc-6knld4-1"]{content:"koHzao,"}/*!sc*/
+.dGjsib{color:var(--primaryColor);font-size:3.4rem;line-height:1.1em;}/*!sc*/
+@media (min-width:768px){.dGjsib{font-size:4.2rem;}}/*!sc*/
+.dGjsib:not(:first-child){margin-top:1.6rem;}/*!sc*/
+.dGjsib:not(:last-child){margin-bottom:.8rem;}/*!sc*/
+data-styled.g48[id="styled__Title-sc-6knld4-3"]{content:"dGjsib,"}/*!sc*/
+.jUreaI{color:var(--secondaryColor);font-size:2.1rem;-webkit-letter-spacing:-0.45px;-moz-letter-spacing:-0.45px;-ms-letter-spacing:-0.45px;letter-spacing:-0.45px;line-height:1.5em;}/*!sc*/
+@media (min-width:768px){.jUreaI{font-size:2.4rem;}}/*!sc*/
+.jUreaI:not(:last-child){margin-bottom:2.4rem;}/*!sc*/
+data-styled.g49[id="styled__Subtitle-sc-6knld4-4"]{content:"jUreaI,"}/*!sc*/
+.Lnqck{position:absolute;top:-100vh;}/*!sc*/
+data-styled.g50[id="styled__Author-sc-6knld4-5"]{content:"Lnqck,"}/*!sc*/
+@media (min-width:450px){.gEjlaM{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;}}/*!sc*/
+.gEjlaM:not(:first-child){border-top:1px solid var(--borderColor);margin-top:4.8rem;padding-top:2.4rem;}/*!sc*/
+data-styled.g51[id="styled__PostNav-sc-1cpw0uj-0"]{content:"gEjlaM,"}/*!sc*/
+.hXrYGw{height:2.4rem;margin-bottom:1.6rem;}/*!sc*/
+.hXrYGw{color:var(--secondaryColor);font-size:2rem;-webkit-letter-spacing:-0.04px;-moz-letter-spacing:-0.04px;-ms-letter-spacing:-0.04px;letter-spacing:-0.04px;line-height:1.3em;}/*!sc*/
+data-styled.g52[id="styled__Title-sc-1cpw0uj-1"]{content:"hXrYGw,"}/*!sc*/
+.gYajij{display:block;}/*!sc*/
+@media (max-width:450px){.gYajij:not(:last-child){margin-bottom:2.4rem;}}/*!sc*/
+@media (min-width:450px){.gYajij{max-width:calc(50% - .8rem);width:50%;}.gYajij > a{height:calc(100% - 2.4rem - 1.6rem);}}/*!sc*/
+data-styled.g53[id="styled__NavItem-sc-1cpw0uj-2"]{content:"gYajij,"}/*!sc*/
+</style><link rel="icon" href="/favicon-32x32.png?v=4a9773549091c227cd2eb82ccd9c5e3a" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="icon" href="/favicon.svg?v=c019aabee62965941daf6b3ac0d58cf6" type="image/svg+xml"/><link rel="icon" href="/favicon-32x32.png?v=c019aabee62965941daf6b3ac0d58cf6" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="#111111"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=c019aabee62965941daf6b3ac0d58cf6"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=c019aabee62965941daf6b3ac0d58cf6"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=c019aabee62965941daf6b3ac0d58cf6"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=c019aabee62965941daf6b3ac0d58cf6"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=c019aabee62965941daf6b3ac0d58cf6"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=c019aabee62965941daf6b3ac0d58cf6"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=c019aabee62965941daf6b3ac0d58cf6"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=c019aabee62965941daf6b3ac0d58cf6"/><link rel="alternate" type="application/rss+xml" title="Shivam Gohel - RSS Feed" href="/feed.xml"/><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><link as="script" rel="preload" href="/webpack-runtime-125ca7fdc3381df52f49.js"/><link as="script" rel="preload" href="/styles-55e82d6ff5158c00b714.js"/><link as="script" rel="preload" href="/framework-de237a875aa45b276a9d.js"/><link as="script" rel="preload" href="/app-fe01a60adb058ed7e33f.js"/><link as="script" rel="preload" href="/commons-645eb18e68292616f70e.js"/><link as="script" rel="preload" href="/component---src-templates-research-post-js-6bdd586f8750d117c791.js"/><link as="fetch" rel="preload" href="/page-data/research/patient-journey-mapping/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2451431863.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/4286626986.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/469472723.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/63159454.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><script>
+              (function() {
+                window.__onThemeChange = function() {};
+                function setTheme(newTheme) {
+                  window.__theme = newTheme;
+                  usedTheme = newTheme;
+                  document.body.className = newTheme;
+                  window.__onThemeChange(newTheme);
+                }
+                var usedTheme;
+                try {
+                  usedTheme = localStorage.getItem('theme');
+                } catch (err) { }
+                window.__setTheme = function(newTheme) {
+                  setTheme(newTheme);
+                  try {
+                    localStorage.setItem('theme', newTheme);
+                  } catch (err) {}
+                }
+                const userHasDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+                if (userHasDarkMode) {
+                  setTheme(usedTheme || 'theme-dark');
+                } else {
+                  setTheme(usedTheme || 'theme-light');
+                }
+              })();
+            </script><noscript>Without JavaScript it doesn&#x27;t work here</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="tl-edges"><div class="tl-wrapper tl-wrapper--mount tl-wrapper-status--entered" style="z-index:1;opacity:1"><section class="styled__Layout-sc-119k7r-0 bFceSq"><main role="main" class="styled__Main-sc-119k7r-1 ibvafm"><div class="styled__Container-esc74j-0 fJmmUZ"><section class="styled__GridTemplate-sc-3beusd-0 cGBcXF"><div itemscope="" itemType="http://schema.org/Article"><header class="styled__PostHeader-sc-6knld4-0 dGuZKf"><div class="styled__ButtonBack-sc-6knld4-1 koHzao"><a class="styled__ButtonLink-vsjuj8-0 giXkww" direction="down" duration="1" href="/research/">← Back to List</a></div><time class="styled__DateTime-nc852r-0 ilNUir"><span itemProp="datePublished">06 December 2020</span><span> · <!-- -->3<!-- --> min read</span></time><h1 itemProp="name" class="styled__Title-sc-6knld4-3 dGjsib">Patient Journey Mapping for Home Monitoring Solutions for children with Epilepsy</h1><h2 itemProp="description" class="styled__Subtitle-sc-6knld4-4 jUreaI">Design in Healthcare: Using Patient Journey Mapping</h2><h3 itemProp="author" class="styled__Author-sc-6knld4-5 Lnqck">Shivam Gohel</h3><div class="styled__Tags-v53wrq-0 dhtKzb"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="sc-bdfBwQ wXioE styled__TagIcon-v53wrq-3 jNVYOU"><path d="M20 4H8.515a2 2 0 00-1.627.838l-4.701 6.581a.997.997 0 000 1.162l4.701 6.581A2 2 0 008.515 20H20c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 14H8.515l-4.286-6 4.286-6H20v12z"></path></svg><span class="styled__TagHolder-v53wrq-1 dewBJt"><a direction="down" duration="1" href="/research/patient-journey-mapping/research?query=javascript, bot, whatsapp, automation"><span class="styled__TagItem-v53wrq-2 fWXpRL">javascript, bot, whatsapp, automation</span></a></span></div></header><article class="styled__Content-sc-7zk7qz-0 bIKwfA"><div itemProp="articleBody"><p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 65.6441717791411%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB5UlEQVQoz6VSbU8TQRDm32qwxehBqSYSAT9q+GCLCG0pdK+aHKWFHm9iSz0PsDFNTAnh7c4PpkVa1FK4dndv7/ac64vm+KiTJ7OT2XlmZp/sgPMfNsA5h6NYLCEkJd8sIZRKJJaQ2AcCSIBEB0iU4gtvVfUTUIDYIz8QxgT/8I6SKyiKuvshn1dyOeV9H7kOtrcL+/ufJ5+9GBwc6U3uHoHA+OzcIgRfSraSd1qG0+ntWdKyLPCrq5tD9x97yCOB8VA4AsHlZbteJ4aBKSGHZVLcI60WcRwMZhhtKEilZP/Qo9uTw9NRl1yntQuGsWnZ7PDALBXZu3W2kmKNX4xS6OKk02s+f9AjmDA89jI0B8Gugjey9LoJddS2KfirBq3XKGPUsrE7eVn2+Ub75N7aT8Nhd7LJgMA+Fsy0xH7+YKbJwCBzfm7qGlw5mczaX/KftbtvhodhTJpNfNUgjBHuEOOG3FyTPRWvZ9vcdtIZ+Z4v6CEHgxOvZxe6kvKOgdi1C175xtUdviVDU/fSVTu7eVuwh8KTicnnlUr1+Pjs9FQ/OdE0TV+WtHhEL5d1/Stk9KOjs2r1+6uZ+J27gkcwWd6ampqJzScjUQSIAmJoMSEiUYRkNJYED4DvFQpFMisbnsn/Zr8BQ5+amrG8XVQAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image lazyload"
+        alt="pjourney pageheader"
+        title="pjourney pageheader"
+        data-src="/static/1f24394e00232df56db33e24f66f0d89/a6d36/pjourney_pageheader.png"
+        data-srcset="/static/1f24394e00232df56db33e24f66f0d89/222b7/pjourney_pageheader.png 163w,
+/static/1f24394e00232df56db33e24f66f0d89/ff46a/pjourney_pageheader.png 325w,
+/static/1f24394e00232df56db33e24f66f0d89/a6d36/pjourney_pageheader.png 650w,
+/static/1f24394e00232df56db33e24f66f0d89/e548f/pjourney_pageheader.png 975w,
+/static/1f24394e00232df56db33e24f66f0d89/72372/pjourney_pageheader.png 1149w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span>
+For successful innovations it is important to fully understand the context, stakeholders and opportunities. The goal of the course is to make sense of this complexity, and apply a design tool that is used at Delft University: the Patient Journey method. </p>
+<p><strong>Role and Duration</strong></p>
+<p>Patient Journey Mapping, Understanding the problem context, Identifying key actors</p>
+<p><em>September 2019 - November 2019</em></p>
+<h2>The challenge</h2>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 14.723926380368097%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAAAsSAAALEgHS3X78AAAAjElEQVQI102M6w6DIBSDef93nMhVf8wl3CYGTVeYS0bSfG0P54hynrD7judxQJGaMrUOOtLenac3pPr5O9frwv8TpS8sC8y6QnpPOUzWDqmeyd7P1GQdZv7ts2+2MOxW7oYQcPG4eJcCOT1gtIaSEq9tQ+Iwx4iS0/CJfjBE5BTHLDKXlBC7p/rB1ho+9oTjORMZZOEAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image lazyload"
+        alt="pjourney challenge"
+        title="pjourney challenge"
+        data-src="/static/3ba647e86622abacefd739e4ed5aa18a/a6d36/pjourney_challenge.png"
+        data-srcset="/static/3ba647e86622abacefd739e4ed5aa18a/222b7/pjourney_challenge.png 163w,
+/static/3ba647e86622abacefd739e4ed5aa18a/ff46a/pjourney_challenge.png 325w,
+/static/3ba647e86622abacefd739e4ed5aa18a/a6d36/pjourney_challenge.png 650w,
+/static/3ba647e86622abacefd739e4ed5aa18a/e548f/pjourney_challenge.png 975w,
+/static/3ba647e86622abacefd739e4ed5aa18a/d69c4/pjourney_challenge.png 1002w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p><strong>MAIN TAKEAWAYS</strong></p>
+<ul>
+<li>SEIN wants you to think of a product or device that can help a child with epilepsy, as well as their parents, have a safe night sleep.</li>
+<li>Epilepsy is a disease of the brain, it causes seizures which are events of over excitation of brain cells. What this does to the body depends on the location of this excitation. It can range from small jerky movements from a body part to someone losing consciousness. Seizures are often unpredictable. Most seizures will stop spontaneously, others need medication to stop them. SUDEP (Sudden Unexpected Death in Epilepsy) is where people die after a seizure but we are unable to identify the exact cause. </li>
+<li>Seizure detection devices can help monitor the patients by alarming parents and caregivers when the patients suffers from a seizure. Auditory systems listen to the people and pick up sounds related to epilepsy. Video cameras can monitor the people. Sensors placed in a bed mattress can pick up the movement when someone is shaking. Bracelets can pick up movements as well as heart rate.</li>
+<li>For patients at home, a lot of seizure detection devices are not yet reimbursed by healthcare insurance. Also, not all parents or caregivers trust a seizure detection device.</li>
+<li>The seizure devices are often too sensitive, leading to many false alarms. From a doctor’s perspective, we especially want the large and potentially dangerous seizures to be alarmed by the device. From a parent or caregiver’s perspective, they want to know of all seizures, also the little ones. </li>
+<li>When the patient lives at the facility, nurses and doctors who watch over them. At home, the whole family gets involved.</li>
+</ul>
+<p>The start of making a patient journey is taking the person and his or her context into account. We call the other people and processes surrounding the patient <strong>actors</strong>, because they actively contribute to the health of the patient. </p>
+<blockquote>
+<p>Step one of creating a patient journey is to map the actors and their interdependencies. </p>
+</blockquote>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 141.71779141104295%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAcABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIBBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAe7s2ARYGD//xAAaEAABBQEAAAAAAAAAAAAAAAAQAAERIEEh/9oACAEBAAEFAtGie0Zf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPwEf/8QAFBABAAAAAAAAAAAAAAAAAAAAMP/aAAgBAQAGPwJP/8QAHBABAAIBBQAAAAAAAAAAAAAAAQAQICFBcYGh/9oACAEBAAE/IeXk7pHZahY6if/aAAwDAQACAAMAAAAQY8M8/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPxAf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPxAf/8QAGxAAAwEBAAMAAAAAAAAAAAAAAAERITEQQYH/2gAIAQEAAT8QrrfeCNa2+i50qumu2iWacFhs9YLUt8Qg0Wz/2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image lazyload"
+        alt="pjourney assignment 1 1"
+        title="pjourney assignment 1 1"
+        data-src="/static/b9f2887b41f39c29e6dcfd6e6d2100fb/6aca1/pjourney_assignment_1-1.jpg"
+        data-srcset="/static/b9f2887b41f39c29e6dcfd6e6d2100fb/d2f63/pjourney_assignment_1-1.jpg 163w,
+/static/b9f2887b41f39c29e6dcfd6e6d2100fb/c989d/pjourney_assignment_1-1.jpg 325w,
+/static/b9f2887b41f39c29e6dcfd6e6d2100fb/6aca1/pjourney_assignment_1-1.jpg 650w,
+/static/b9f2887b41f39c29e6dcfd6e6d2100fb/7c09c/pjourney_assignment_1-1.jpg 975w,
+/static/b9f2887b41f39c29e6dcfd6e6d2100fb/01ab0/pjourney_assignment_1-1.jpg 1300w,
+/static/b9f2887b41f39c29e6dcfd6e6d2100fb/2bfae/pjourney_assignment_1-1.jpg 1654w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span>
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 141.71779141104295%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAcABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAECBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAe5vNKAAg//EABcQAAMBAAAAAAAAAAAAAAAAAAABMEH/2gAIAQEAAQUC2SP/xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AR//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/AR//xAAUEAEAAAAAAAAAAAAAAAAAAAAw/9oACAEBAAY/Ak//xAAcEAABAwUAAAAAAAAAAAAAAAABABARITBBUZH/2gAIAQEAAT8hk7cfNioL/9oADAMBAAIAAwAAABCDDwz/xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/EB//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/EB//xAAbEAEAAgMBAQAAAAAAAAAAAAABABEQITFhcf/aAAgBAQABPxDYbQPIGzjhKXu9yrGzXyXUOYe5Wxn/2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image lazyload"
+        alt="pjourney assignment 1 2"
+        title="pjourney assignment 1 2"
+        data-src="/static/8173e11cb595b85704436b0c5900c5c7/6aca1/pjourney_assignment_1-2.jpg"
+        data-srcset="/static/8173e11cb595b85704436b0c5900c5c7/d2f63/pjourney_assignment_1-2.jpg 163w,
+/static/8173e11cb595b85704436b0c5900c5c7/c989d/pjourney_assignment_1-2.jpg 325w,
+/static/8173e11cb595b85704436b0c5900c5c7/6aca1/pjourney_assignment_1-2.jpg 650w,
+/static/8173e11cb595b85704436b0c5900c5c7/7c09c/pjourney_assignment_1-2.jpg 975w,
+/static/8173e11cb595b85704436b0c5900c5c7/01ab0/pjourney_assignment_1-2.jpg 1300w,
+/static/8173e11cb595b85704436b0c5900c5c7/2bfae/pjourney_assignment_1-2.jpg 1654w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<blockquote>
+<p>Time is a relevant factor in the process of healing, also in the use of products and the interaction of services. All of the above can be divided into several phases over time. The interdependencies between actors can differ from phase to phase; not all actors are involved in every phase. Therefore, it is important to take time into consideration when mapping the system to clearly identify interactions. </p>
+</blockquote>
+<h3>The Research Problem</h3>
+<blockquote>
+<p>How is a year of a family and a child with epilepsy when the episodes are scarce (3-4 times a year)</p>
+</blockquote>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 70.5521472392638%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAOABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB3lAH/8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQABBQJf/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQAGPwJf/8QAGBAAAwEBAAAAAAAAAAAAAAAAARARADH/2gAIAQEAAT8hHTNVH//aAAwDAQACAAMAAAAQEM//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAaEAADAAMBAAAAAAAAAAAAAAAAAREQIWFR/9oACAEBAAE/EElD7WV6J1CXfd4Tp//Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image lazyload"
+        alt="pjourney assignment 2 3"
+        title="pjourney assignment 2 3"
+        data-src="/static/4e0e6110f8a32ad4069ef1b6049f6147/6aca1/pjourney_assignment_2-3.jpg"
+        data-srcset="/static/4e0e6110f8a32ad4069ef1b6049f6147/d2f63/pjourney_assignment_2-3.jpg 163w,
+/static/4e0e6110f8a32ad4069ef1b6049f6147/c989d/pjourney_assignment_2-3.jpg 325w,
+/static/4e0e6110f8a32ad4069ef1b6049f6147/6aca1/pjourney_assignment_2-3.jpg 650w,
+/static/4e0e6110f8a32ad4069ef1b6049f6147/7c09c/pjourney_assignment_2-3.jpg 975w,
+/static/4e0e6110f8a32ad4069ef1b6049f6147/01ab0/pjourney_assignment_2-3.jpg 1300w,
+/static/4e0e6110f8a32ad4069ef1b6049f6147/22412/pjourney_assignment_2-3.jpg 2339w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<blockquote>
+<p>To understand your user group better, you need to try and understand how a product or service is experienced from a person’s point of view. You can include the emotions with smileys, plus and minus signs, or a graph. You can nuance the emotions by adding in words such as chaos and despair and adding a quote from the interviews</p>
+</blockquote>
+<h3>Finding Emotions</h3>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 74.84662576687117%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAAsTAAALEwEAmpwYAAABrklEQVQoz2P4TwT49+8fhIQw4IABl4Y/f0AIAn79+n337uNfv/5A2H///iWgGWIlRN3Nm/edHMJKSxpPnjiN02agUrjTzpz8f+rUv79gTk52jZ11cmbKoZCA7imT575//wniCwZkj30Bgz9/QBo2rf5fkfL7/Zv/nz59iIzIdHWsWbHof276DjUVm717jkJsYkC29tOnT+/ff4A49f2rT8eWbX79/BXInz9/TZ+2JNCvXl8nsLCgAbuzv3//8eHDR4jmzWs2ikpoL508G8j++v3Hw4dPnjx91NTYf+HCdYhN6JqBHgT68g/YnweWrJKRNd6wcsP/Tx8vHz/79t0HeJzhiyqQ5o8f9mzeKSGpt3DhKqDIozv3Ibb9AYYHkn4smiFOqqxqFRXRqihvAcf5XzQ7sWuGKHr3/oOLS6iJsVtMTDbWtIWu+efPn8DQ/gNOVqdPnbez9klJLoyOSP/9+zemb9E1f/v27cWLF79+/QKG2vOnz0/vO/zy+cuLh479BOoGpsnfv4HmQlIRumagEFAb0PIfYABMKm/fvQdynj17DjQUIgiUBRmNP8CIBwC4JjRF4mubZwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image lazyload"
+        alt="pjourney emotions"
+        title="pjourney emotions"
+        data-src="/static/f3557498431624b2cf78093db1ad86ff/a6d36/pjourney_emotions.png"
+        data-srcset="/static/f3557498431624b2cf78093db1ad86ff/222b7/pjourney_emotions.png 163w,
+/static/f3557498431624b2cf78093db1ad86ff/ff46a/pjourney_emotions.png 325w,
+/static/f3557498431624b2cf78093db1ad86ff/a6d36/pjourney_emotions.png 650w,
+/static/f3557498431624b2cf78093db1ad86ff/d7abb/pjourney_emotions.png 959w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span>
+<strong>MAIN TAKEAWAYS</strong></p>
+<blockquote>
+<p>People can feel insecure or uncertain because seizures are unpredictable. </p>
+</blockquote>
+<blockquote>
+<p>After a good night sleep without hearing an alarm a parent may feel relieved and happy that nothing happened that night. Or, they might feel suspicious and wonder whether they missed anything. </p>
+</blockquote>
+<blockquote>
+<p>When there is a seizure and the alarm goes off, parents can feel afraid, anxious, alerted, helpless or relieved. Parents/caregivers feel frustrated when the monitoring device does not work well. They feel relieved when they can help the child. </p>
+</blockquote>
+<blockquote>
+<p>Some children do not notice their seizures. Others may be afraid of having a seizure while going to sleep. When a child has had a seizure, they need the parent/caregiver to comfort them to go back to sleep. </p>
+</blockquote>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 111.04294478527608%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAWABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAMEBf/EABYBAQEBAAAAAAAAAAAAAAAAAAIBAP/aAAwDAQACEAMQAAAB7U4YAu4yEbQNdIs//8QAHRAAAgIBBQAAAAAAAAAAAAAAAgMBBBMAETIzNP/aAAgBAQABBQKTjROABA4MT52uin5pVvLK2QErxL//xAAVEQEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAwEBPwGFP//EABcRAAMBAAAAAAAAAAAAAAAAAAEQEQL/2gAIAQIBAT8Byaov/8QAGxAAAQUBAQAAAAAAAAAAAAAAAAECERIhMYH/2gAIAQEABj8C0s5cLN4OPBoqz0rYRszB/8QAHhAAAgICAgMAAAAAAAAAAAAAAAERMSGxEHFBgfD/2gAIAQEAAT8hTbTRBhhtTFdktTPp0U9dm/viw8a4iYPYog//2gAMAwEAAgADAAAAECj/AAD/xAAZEQACAwEAAAAAAAAAAAAAAAAAARARIXH/2gAIAQMBAT8QrnB4y0f/xAAbEQEAAgIDAAAAAAAAAAAAAAABABEQITFRsf/aAAgBAgEBPxBU33XsNkAcY//EAB0QAAIDAQADAQAAAAAAAAAAAAERACExQRBhsfD/2gAIAQEAAT8Qb9bowcJILOprksz+ghors+Hwx/R7QTaKUspQQDJR09eOAB6ODZeT/9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image lazyload"
+        alt="pjourney assignment 3 1"
+        title="pjourney assignment 3 1"
+        data-src="/static/7ae1aafb9bad9c050f20fc29d34aa908/6aca1/pjourney_assignment_3-1.jpg"
+        data-srcset="/static/7ae1aafb9bad9c050f20fc29d34aa908/d2f63/pjourney_assignment_3-1.jpg 163w,
+/static/7ae1aafb9bad9c050f20fc29d34aa908/c989d/pjourney_assignment_3-1.jpg 325w,
+/static/7ae1aafb9bad9c050f20fc29d34aa908/6aca1/pjourney_assignment_3-1.jpg 650w,
+/static/7ae1aafb9bad9c050f20fc29d34aa908/7c09c/pjourney_assignment_3-1.jpg 975w,
+/static/7ae1aafb9bad9c050f20fc29d34aa908/4ac4c/pjourney_assignment_3-1.jpg 1243w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<blockquote>
+<p>How do your insights become the starting point of your ideas?</p>
+</blockquote>
+<h3>Finding the touchpoints</h3>
+<blockquote>
+<p>To identify friction points that can lead to new opportunities, we need to find where the patient’s needs are not being met. The voice of the patient can be represented with quotes from our interviews. </p>
+</blockquote>
+<blockquote>
+<p>We design for complex systems by defining the root of the problem and its consequences. We take on board all the actors that are connected to the problem. Defining the right scope of the problem is key to finding the root and implementing the right solution. </p>
+</blockquote>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 107.97546012269939%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAWABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAECAwX/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAHtqSbIGQNgf//EABgQAAMBAQAAAAAAAAAAAAAAAAERMQAQ/9oACAEBAAEFAnhw3CFO8//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8BH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8BH//EABcQAAMBAAAAAAAAAAAAAAAAAAAQMSD/2gAIAQEABj8C1CL/xAAbEAEAAgIDAAAAAAAAAAAAAAABABExURAhQf/aAAgBAQABPyFVsWoYlLZhW3gVnWCeMMT/2gAMAwEAAgADAAAAEIDHAP/EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8QH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8QH//EAB4QAQEBAAIBBQAAAAAAAAAAAAERADFRIUFhceHx/9oACAEBAAE/EIC0vZuSk+HWi7y6hrx+ZeunU0xOMOzI8rzr08fb9YwED2N//9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image lazyload"
+        alt="pjourney assignment 4 pdf 1"
+        title="pjourney assignment 4 pdf 1"
+        data-src="/static/21281b2db35e5d88673f0e77702d8ce9/6aca1/pjourney_assignment_4_pdf-1.jpg"
+        data-srcset="/static/21281b2db35e5d88673f0e77702d8ce9/d2f63/pjourney_assignment_4_pdf-1.jpg 163w,
+/static/21281b2db35e5d88673f0e77702d8ce9/c989d/pjourney_assignment_4_pdf-1.jpg 325w,
+/static/21281b2db35e5d88673f0e77702d8ce9/6aca1/pjourney_assignment_4_pdf-1.jpg 650w,
+/static/21281b2db35e5d88673f0e77702d8ce9/7c09c/pjourney_assignment_4_pdf-1.jpg 975w,
+/static/21281b2db35e5d88673f0e77702d8ce9/3e9c5/pjourney_assignment_4_pdf-1.jpg 1283w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span>
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 115.33742331288343%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAXABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAECAwX/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAH170FaEgaB/8QAGRAAAgMBAAAAAAAAAAAAAAAAAREAAhIg/9oACAEBAAEFAsh5rKhDMXP/xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AR//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/AR//xAAXEAADAQAAAAAAAAAAAAAAAAAAIDEh/9oACAEBAAY/AoQx/wD/xAAbEAADAAIDAAAAAAAAAAAAAAAAAREhYRBRgf/aAAgBAQABPyGrYGoIgkR2otxKD9Escf/aAAwDAQACAAMAAAAQQwc8/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPxAf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPxAf/8QAGxABAQEAAwEBAAAAAAAAAAAAAREAITFhQZH/2gAIAQEAAT8Qs1lVx9Py0MKWG4r2vhke40kW7kvbzjnPYiXBCb//2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image lazyload"
+        alt="pjourney assignment 4 pdf 2"
+        title="pjourney assignment 4 pdf 2"
+        data-src="/static/1ebd1e34a0c56f79a1a58879c5fabc41/6aca1/pjourney_assignment_4_pdf-2.jpg"
+        data-srcset="/static/1ebd1e34a0c56f79a1a58879c5fabc41/d2f63/pjourney_assignment_4_pdf-2.jpg 163w,
+/static/1ebd1e34a0c56f79a1a58879c5fabc41/c989d/pjourney_assignment_4_pdf-2.jpg 325w,
+/static/1ebd1e34a0c56f79a1a58879c5fabc41/6aca1/pjourney_assignment_4_pdf-2.jpg 650w,
+/static/1ebd1e34a0c56f79a1a58879c5fabc41/7c09c/pjourney_assignment_4_pdf-2.jpg 975w,
+/static/1ebd1e34a0c56f79a1a58879c5fabc41/01ab0/pjourney_assignment_4_pdf-2.jpg 1300w,
+/static/1ebd1e34a0c56f79a1a58879c5fabc41/2c3a2/pjourney_assignment_4_pdf-2.jpg 1402w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<h3>Creating Ideas</h3>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 110.42944785276075%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAWABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAECAwT/xAAXAQEBAQEAAAAAAAAAAAAAAAAAAgED/9oADAMBAAIQAxAAAAHvx7q1z3Sm0Dbg/8QAGxAAAgIDAQAAAAAAAAAAAAAAAQIAEQMQEjL/2gAIAQEAAQUCdiGXIxieGQXwIBQ3/8QAFxEBAAMAAAAAAAAAAAAAAAAAAQAQEv/aAAgBAwEBPwHLC//EABYRAAMAAAAAAAAAAAAAAAAAACAiUf/aAAgBAgEBPwFYH//EABkQAAIDAQAAAAAAAAAAAAAAAAABICExQf/aAAgBAQAGPwJ2dEYzHH//xAAaEAEBAAIDAAAAAAAAAAAAAAABABEhEDFx/9oACAEBAAE/Id8tNtcj2aoyU90XkIGJsPH/2gAMAwEAAgADAAAAEID/ADz/xAAZEQEBAAMBAAAAAAAAAAAAAAABIQAQEUH/2gAIAQMBAT8Qi2+XAgd3/8QAGREAAgMBAAAAAAAAAAAAAAAAAREAECGR/9oACAECAQE/EE4xwQp5f//EABwQAQADAAIDAAAAAAAAAAAAAAEAESExkUFhcf/aAAgBAQABPxCgKUoJRUT4wxVFU1YplVajjB4d0YYAweSFX19gWldw4J//2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image lazyload"
+        alt="pjourney assignment 5 1"
+        title="pjourney assignment 5 1"
+        data-src="/static/c76d57a0fbcf575efcbb4c9987c0e6c0/6aca1/pjourney_assignment_5-1.jpg"
+        data-srcset="/static/c76d57a0fbcf575efcbb4c9987c0e6c0/d2f63/pjourney_assignment_5-1.jpg 163w,
+/static/c76d57a0fbcf575efcbb4c9987c0e6c0/c989d/pjourney_assignment_5-1.jpg 325w,
+/static/c76d57a0fbcf575efcbb4c9987c0e6c0/6aca1/pjourney_assignment_5-1.jpg 650w,
+/static/c76d57a0fbcf575efcbb4c9987c0e6c0/7c09c/pjourney_assignment_5-1.jpg 975w,
+/static/c76d57a0fbcf575efcbb4c9987c0e6c0/01ab0/pjourney_assignment_5-1.jpg 1300w,
+/static/c76d57a0fbcf575efcbb4c9987c0e6c0/44e73/pjourney_assignment_5-1.jpg 1517w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span>
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 119.6319018404908%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAYABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIBBf/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAAB7VZuVAnSqB//xAAZEAADAAMAAAAAAAAAAAAAAAAAAREQMUH/2gAIAQEAAQUCdotdEQmP/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAGREAAgMBAAAAAAAAAAAAAAAAABEBAjEQ/9oACAECAQE/AbYRgnz/xAAUEAEAAAAAAAAAAAAAAAAAAAAw/9oACAEBAAY/Ah//xAAaEAADAAMBAAAAAAAAAAAAAAAAAREhMUEQ/9oACAEBAAE/IW0nPJi8MEN26bUVmT//2gAMAwEAAgADAAAAEMzogv/EABYRAQEBAAAAAAAAAAAAAAAAAAEAEP/aAAgBAwEBPxAnf//EABcRAQEBAQAAAAAAAAAAAAAAAAEAETH/2gAIAQIBAT8QWQoB7I6gwy//xAAdEAEAAwEAAgMAAAAAAAAAAAABABEhMUFRYXHw/9oACAEBAAE/EAITV/vEVMa/cV9LvWXtSdirBjXqEpJsUE6aFQjhfxP/2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image lazyload"
+        alt="pjourney assignment 5 2"
+        title="pjourney assignment 5 2"
+        data-src="/static/5cd3c0a2c24a048ebc88ed564ec8f534/6aca1/pjourney_assignment_5-2.jpg"
+        data-srcset="/static/5cd3c0a2c24a048ebc88ed564ec8f534/d2f63/pjourney_assignment_5-2.jpg 163w,
+/static/5cd3c0a2c24a048ebc88ed564ec8f534/c989d/pjourney_assignment_5-2.jpg 325w,
+/static/5cd3c0a2c24a048ebc88ed564ec8f534/6aca1/pjourney_assignment_5-2.jpg 650w,
+/static/5cd3c0a2c24a048ebc88ed564ec8f534/7c09c/pjourney_assignment_5-2.jpg 975w,
+/static/5cd3c0a2c24a048ebc88ed564ec8f534/01ab0/pjourney_assignment_5-2.jpg 1300w,
+/static/5cd3c0a2c24a048ebc88ed564ec8f534/92987/pjourney_assignment_5-2.jpg 1478w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<h3>What’s next?</h3>
+<p>We have identified the challenge. The goal is the deep dive into the challenge
+with some rapid prototyping and testing with users. </p></div></article><nav class="styled__PostNav-sc-1cpw0uj-0 gEjlaM"><div class="styled__NavItem-sc-1cpw0uj-2 gYajij"><h2 class="styled__Title-sc-1cpw0uj-1 hXrYGw">Previous</h2><a class="styled__ResearchItem-sc-82ttz1-0 ctujWq" direction="down" duration="1" title="The Patient Centered Value System" href="/research/patient-and-family-centered-care/"><article class="styled__BoxHandler-sc-1n4boo3-0 cPNyUc"><time class="styled__DateTime-nc852r-0 ilNUir">01 Dec, 2020</time><h1 class="styled__Title-sc-82ttz1-1 caLUac">The Patient Centered Value System</h1></article></a></div></nav></div></section></div><aside class="styled__FooterData-jnnxg8-0 gLwNHK"><div class="styled__Container-esc74j-0 fJmmUZ">©2020 shivamgohel.com</div></aside></main></section></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script src="https://platform.twitter.com/widgets.js"></script><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-185369015-2', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/research/patient-journey-mapping/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-f1ea87304f8d1ce6befc.js"],"app":["/app-fe01a60adb058ed7e33f.js"],"component---src-pages-404-js":["/component---src-pages-404-js-72a5f301a10d814caf03.js"],"component---src-pages-code-js":["/component---src-pages-code-js-7edb28934cd443e3a757.js"],"component---src-pages-hi-js":["/component---src-pages-hi-js-c50fa7ab563e11f4cb43.js"],"component---src-pages-index-js":["/component---src-pages-index-js-69ff5a7a08d8d9c87d4f.js"],"component---src-templates-research-list-js":["/component---src-templates-research-list-js-f44a8642ca10b67ba6a9.js"],"component---src-templates-research-post-js":["/component---src-templates-research-post-js-6bdd586f8750d117c791.js"]};/*]]>*/</script><script src="/polyfill-f1ea87304f8d1ce6befc.js" nomodule=""></script><script src="/component---src-templates-research-post-js-6bdd586f8750d117c791.js" async=""></script><script src="/commons-645eb18e68292616f70e.js" async=""></script><script src="/app-fe01a60adb058ed7e33f.js" async=""></script><script src="/framework-de237a875aa45b276a9d.js" async=""></script><script src="/styles-55e82d6ff5158c00b714.js" async=""></script><script src="/webpack-runtime-125ca7fdc3381df52f49.js" async=""></script></body></html>
