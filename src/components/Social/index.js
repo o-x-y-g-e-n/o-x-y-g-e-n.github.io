@@ -58,9 +58,8 @@ const Social = () => {
         title="Mail"
         onClick={() => trackClick("Gmail")}
       >
-           <S.SocialGmail />
+        <S.SocialGmail />
       </S.SocialItem>
-     
     </S.Social>
   )
 }

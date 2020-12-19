@@ -3,7 +3,6 @@ import Layout from "../components/Layout"
 import SEO from "../components/Seo"
 import GridTemplate from "../components/GridTemplate"
 import Author from "../components/Author"
-
 const IndexPage = () => {
   return (
     <Layout>

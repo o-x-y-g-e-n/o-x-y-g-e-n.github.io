@@ -100,7 +100,7 @@ const plugins = [
     resolve: `gatsby-plugin-manifest`,
     options: {
       name: `Shivam Gohel`,
-      short_name: `shivamgohel.com`,
+      short_name: `shivamgohel`,
       start_url: `/`,
       background_color: `#fcfcfc`,
       theme_color: `#111111`,
@@ -212,7 +212,7 @@ module.exports = {
   siteMetadata: {
     name: "Shivam Gohel",
     title: `Shivam Gohel - Full Stack Developer`,
-    short_name: "shivamgohel.com",
+    short_name: "shivamgohel",
     start_url: "/",
     background_color: `#fcfcfc`,
     siteUrl: "localhost:8000",
@@ -225,7 +225,7 @@ module.exports = {
       linkedinLink: `https://www.linkedin.com/in/shivamgohel/`,
       githubLink: `https://github.com/o-x-y-g-e-n`,
       mediumLink: `https://medium.com/@shivamgohel777`,
-      gmailLink: 'mailto:shivamgohel777@gmail.com'
+      gmailLink: "mailto:shivamgohel777@gmail.com",
     },
   },
   plugins,

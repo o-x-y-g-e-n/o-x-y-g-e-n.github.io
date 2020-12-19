@@ -1,7 +1,6 @@
 import styled, { css } from "styled-components"
-import { Github, LinkedinIn, MediumM} from "styled-icons/fa-brands"
-import {Gmail} from "@styled-icons/simple-icons/Gmail"
-import {EmailOutline} from "@styled-icons/evaicons-outline/EmailOutline"
+import { Github, LinkedinIn, MediumM } from "styled-icons/fa-brands"
+import { EmailOutline } from "@styled-icons/evaicons-outline/EmailOutline"
 import * as V from "../../styles/variables"
 
 const Icon = css`
