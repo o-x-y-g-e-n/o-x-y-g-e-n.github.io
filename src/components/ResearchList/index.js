@@ -12,7 +12,7 @@ const trackClickAllResearch = () => {
     category: 'Research',
     action: 'click',
     label: `Research - Click to view all Research`
-  })
+  })  
 }
 
 const blogListQuery = graphql`
@@ -27,7 +27,7 @@ const blogListQuery = graphql`
             slug
           }
           frontmatter {
-            date(locale: "pt-br", formatString: "DD MMM[,] YYYY")
+            date(locale: "en-in", formatString: "DD MMM[,] YYYY")
             description
             title
             tags
@@ -45,7 +45,7 @@ const ResearchList = () => {
 
   return (
     <S.ResearchList>
-      <S.Title>Latest Blog</S.Title>
+      <S.Title>Latest Research Blogs</S.Title>
       <S.Nav>
         {list.map(({ node }, i) => (
           <ResearchItem

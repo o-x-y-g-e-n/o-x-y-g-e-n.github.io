@@ -211,7 +211,7 @@ if (process.env.CONTEXT === "production") {
 module.exports = {
   siteMetadata: {
     name: "Shivam Gohel",
-    title: `Shivam Gohel - Full Stack Developer`,
+    title: `Shivam Gohel - Software Engineer`,
     short_name: "shivamgohel",
     start_url: "/",
     background_color: `#fcfcfc`,
@@ -220,7 +220,7 @@ module.exports = {
     display: `minimal-ui`,
     author: "Shivam Gohel",
     description: `Shivam Gohel's personal website.`,
-    position: "Front-end Developer",
+    position: "Software Engineer",
     social: {
       linkedinLink: `https://www.linkedin.com/in/shivamgohel/`,
       githubLink: `https://github.com/o-x-y-g-e-n`,
